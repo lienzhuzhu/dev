@@ -1,52 +1,14 @@
-/*
-color palette HEX
---minion-yellow: #ffe74cff;
---fiery-rose: #ff5964ff;
---snow: #FAF7F7FF;
---rich-black-fogra-39: #0a0908ff;
---blue-jeans: #35a7ffff;
-*/
 
+:root {
+    --yellow: #ffe74cff;
+    --rose: #ff5964ff;
+    --snow: #FAF7F7FF;
+    --black: #0a0908ff;
+    --blue-jeans: #35a7ffff;
+}
 
 body {
     margin: 0;
 }
 
-#project-display-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.project-display-area {
-    width: 300px;
-    height: 300px;
-    justify-self: center;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#project-display-area-one {
-    background-color: #ffe74cff;
-}
-
-#project-display-area-two {
-    background-color: #ff5964ff;
-}
-
-#project-display-area-three {
-    background-color: #0a0908ff;
-}
-
-#project-display-area-four {
-    background-color: #ff5964ff;
-}
-
-#project-display-area-five {
-    background-color: #35a7ffff;
-}
-
-#project-display-area-six {
-    background-color: #FAF7F7FF;
-}
 
