@@ -16,7 +16,9 @@ body {
 
 /* Landing Section */
 
-#landing {
+.section {
+    /* border: 10px solid blue; */
+
     width: 100vw;
     height: 100vh;
     display: flex;
