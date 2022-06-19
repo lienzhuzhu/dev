@@ -11,4 +11,11 @@ body {
     margin: 0;
 }
 
+.project-card {
+    max-width: 400px;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: var(--black);
+}
+
 
