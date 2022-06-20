@@ -18,17 +18,18 @@ body {
 /* Landing Section */
 
 .section {
-    /* border: 10px solid blue; */
-
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-size: 10vw;
 }
 
+.generic-content {
+    /* border: 10px solid blue; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Project Cards */
 
@@ -82,6 +83,12 @@ body {
     overflow: hidden;
 }
 
+.screenshot-link {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .screenshot {
     height: 100%;
     width: 100%;
@@ -89,8 +96,6 @@ body {
 }
 
 .project-header {
-    /* border: 1px solid white; */
-
     display: grid;
     grid-template-columns: 70% 30%; 
     height: 10%;
@@ -98,10 +103,7 @@ body {
 
 .project-title,
 .project-tech {
-    /* border: 2px solid yellow; */
-
     padding-left: 20px; 
-
     display: flex;
 }
 
