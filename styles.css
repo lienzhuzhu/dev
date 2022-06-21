@@ -26,13 +26,47 @@ a {
     background-color: rgba(10, 9, 8, 0.8);
     backdrop-filter: saturate(200%) blur(20px);
     position: fixed;
-    display: flex;
+    display: grid;
+    grid-template-columns: 80% 20%;
     align-items: center;
     justify-content: space-around;
 }
 
-.icon-wrapper {
-    height: 60%;
+.home-button {
+    color: var(--snow);
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding-left: 5vw;
+    font-size: 1.25em;
+}
+
+.home-button:hover {
+    cursor: pointer;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.nav-item {
+    height: 4vh;
+}
+
+.nav-flex-container {
+    display: flex;
+    justify-content: start;
+    padding-right: 5vw;
+}
+
+.right-align-container {
+    display: flex;
+    justify-content:space-between;
+    width: 15vw;
+}
+
+.link-icon-wrapper {
+    height: 100%;
 }
 
 .social-icon {

@@ -5,22 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/dragon.png" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
     <title>~/lienzhu</title>
 </head>
 <body>
 
     <div class="nav">
-        <a href="" class="icon-wrapper">
-            <img src="./img/dragon.png" id="logo" alt="this guy's got a logo" class="social-icon">
-        </a>
-        <a href="https://github.com/lienzhuzhu" target="_blank" class="icon-wrapper">
-            <img src="./img/github-original.svg" id="social-github" alt="github logo" class="social-icon">
-        </a>
-        <a href="https://www.linkedin.com/in/lienzhu" target="_blank" class="icon-wrapper">
-            <img src="./img/linkedin-original.svg" id="social-linkedin" alt="linkedin logo" class="social-icon">
-        </a>
-
+        <div class="grid-item">
+            <div class="home-button nav-item" id="back-to-home-button">
+                <strong>LIEN</strong>ZHU
+            </div>
+        </div>
+            
+        <div class="grid-item nav-flex-container">
+            <div class="right-align-container">
+                <div class="nav-item">
+                    <a href="https://github.com/lienzhuzhu" target="_blank" class="link-icon-wrapper">
+                        <img src="./img/github-original.svg" id="social-github" alt="github logo" class="social-icon">
+                    </a>
+                </div>
+        
+                <div class="nav-item">
+                    <a href="https://www.linkedin.com/in/lienzhu" target="_blank" class="link-icon-wrapper">
+                        <img src="./img/linkedin-original.svg" id="social-linkedin" alt="linkedin logo" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 
@@ -34,11 +46,11 @@
 
     
     <div class="carousel" id="project-card-container">
-        <!-- <div class="project-card" id="project-section-card">
+        <div class="project-card" id="project-section-card">
             <div class="vert-align">
                 <strong>PROJECTS</strong>
             </div>
-        </div> -->
+        </div>
 
         <div class="project-card">
             <div class="project-media">
@@ -295,5 +307,6 @@
     </div>
     
 
+    <script src="script.js"></script>
 </body>
 </html>
