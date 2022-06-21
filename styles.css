@@ -16,8 +16,8 @@ body {
     color: var(--black);
 }
 
-a {
-    display: block;
+.project-card:hover {
+    cursor: e-resize;
 }
 
 .nav {
@@ -105,6 +105,8 @@ a {
     overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
+
+    border: 3px solid blue;
 }
 
 #project-section-card {
@@ -145,6 +147,10 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 2.5% 5%;
     display: inline-block;
+
+    margin: 0 5%;
+    margin-top: calc(6vh + 2vh);
+    border: 1px solid red;
 }
 
 .project-media {
