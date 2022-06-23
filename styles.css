@@ -97,13 +97,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    overflow-x: hidden;
 }
 
 
 .about-me-section {
-    width: 100%;
+    width: 100vw;
     /* height: 100vh; */
-    border: 1px solid red;
+
+    /* border: 1px solid red; */
 }
 
 .about-me-card {
@@ -328,6 +331,8 @@ body {
 }
 
 
+
+
 /* use on blog posts */
 
 /* .something-to-hover {
@@ -342,17 +347,20 @@ body {
 /* blog posts */
 
 .blog-section-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     width: 100vw;
     /* height: 100vw; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vw 0vw;
+
+    grid-template-columns: 48.5vw 48.5vw;
+    justify-content: space-evenly;
 }
 
 .blog-card {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
     background-color: var(--gray);
     width: 48vw;
@@ -366,6 +374,8 @@ body {
     align-items: center;
     justify-content: center;
     
+    width: 100%;
+    height: 48.5vw;
 }
 
 
