@@ -305,7 +305,7 @@ body {
 .from-section-card {
     height: 100%;
     width: 100%;
-    font-size: 5vw;
+    font-size: 3vw;
     color: var(--snow);
     text-align: center;
     background-image: url(./img/iowa.svg);
@@ -326,6 +326,9 @@ body {
     font-size: 2vw;
     text-align: center;
 }
+
+
+
 
 #fun-tech-section-container {
     position: fixed;
