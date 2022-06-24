@@ -409,6 +409,8 @@ body {
     top: 8vh;
     display: flex;
     align-items: center;
+
+    font-family: 'Courier New';
 }
 
 .whoami-cmd strong {
