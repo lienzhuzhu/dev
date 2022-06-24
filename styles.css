@@ -400,8 +400,8 @@ body {
 }
 
 .whoami-cmd {
-    background-color: var(--silver);
-    background: rgba(10, 9, 8, .8);
+    background-color: rgba(10, 9, 8, 0.8);
+    backdrop-filter: saturate(200%) blur(20px);
     color: var(--snow);
     width: 98vw;
     height: 8%;
