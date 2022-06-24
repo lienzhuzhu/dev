@@ -190,12 +190,16 @@ body {
 }
 
 #project-card-container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scroll-snap-type: x mandatory;
+
+    padding-top: 10%;
+
+    border: 1px solid black;
 }
 
 #project-section-card {
@@ -203,6 +207,8 @@ body {
     box-shadow: none;
     font-size: 10vw;
     color: var(--black);
+
+    border: 1px solid red;
 }
 
 .vert-align {
@@ -234,8 +240,8 @@ body {
 
 .project-card {
     scroll-snap-align: center;
-    width: 90%;
     height: 88%;
+    width: 98vw;
     border-radius: var(--rad);
     background-color: var(--black);
     color: var(--snow);
@@ -246,7 +252,19 @@ body {
     margin: 0 5%;
     margin-top: calc(6vh + 2vh);
 
-    width: 98vw;
+    
+
+    width: 50%;
+    height: 80%;
+    margin: 0 1%;
+}
+
+.project-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.01);
 }
 
 .project-media {
@@ -340,8 +358,6 @@ body {
 
 
 
-
-/* use on blog posts */
 
 /* .something-to-hover {
     transition: transform 0.2s ease-in-out;
