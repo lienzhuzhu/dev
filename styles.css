@@ -195,7 +195,8 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    scroll-snap-type: x mandatory;
+    /* scroll-snap-type: x mandatory;
+    scroll-snap-type: x; */
 
     padding-top: 10%;
 
@@ -250,13 +251,13 @@ body {
     display: inline-block;
 
     margin: 0 5%;
-    margin-top: calc(6vh + 2vh);
+    /* margin-top: calc(6vh + 2vh); */
 
     
 
-    width: 50%;
+    width: 40%;
     height: 80%;
-    margin: 0 1%;
+    margin: 0 0.5%;
 }
 
 .project-card {
