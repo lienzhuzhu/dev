@@ -30,7 +30,7 @@ body {
     height: 6vh;
     background-color: rgba(10, 9, 8, 0.8);
     backdrop-filter: saturate(200%) blur(20px);
-    position: fixed;
+    /* position: fixed; */
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: center;
@@ -54,7 +54,7 @@ body {
     padding-left: 5vw;
     height: 100%;
 
-    padding-left: 1vw;
+    /* padding-left: 1vw; */
 
     /* border: 1px solid red; */
 }
@@ -72,7 +72,7 @@ body {
     width: 15vw; 
     height: 100%;
 
-    width: 19vw;
+    /* width: 19vw; */
 }
 
 .link-icon-wrapper {
@@ -89,7 +89,7 @@ body {
 
 
 
-/* Hero Image */
+/* About Me */
 
 .flex-container {
     width: 100%;
@@ -124,7 +124,7 @@ body {
 
     /* border: 5px solid pink; */
 
-    width: 98vw;
+    /* width: 98vw; */
 }
 
 .about-me-text-wrapper {
@@ -185,58 +185,36 @@ body {
 
 /* Project Cards */
 
-.project-card:hover {
-    cursor: e-resize;
-}
-
-#project-card-container {
+.projects-section {
     width: 100vw;
     height: 100vh;
+
+    margin: 100px 0;
+    /* border: 1px solid red; */
+
+    overflow: hidden;
+}
+
+.projects-section-header {
+    padding-left: 5vw;
+    font-size: 2rem;
+}
+
+.silver-header {
+    color: var(--silver);
+}
+
+
+#project-card-container {
+    width: auto;
+    height: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     /* scroll-snap-type: x mandatory;
     scroll-snap-type: x; */
 
-    padding-top: 10%;
-
-    border: 1px solid black;
-}
-
-#project-section-card {
-    background-color: transparent;
-    box-shadow: none;
-    font-size: 10vw;
-    color: var(--black);
-
-    border: 1px solid red;
-}
-
-.vert-align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.vert-align img {
-    width: 10vw;
-    position: relative;
-    top: 1.225vw;
-    left: -2.5vw;
-}
-
-.text-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 50%;
-    
-    background-color: var(--snow);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: var(--rad);
+    padding: 0 4.5%;
 }
 
 .project-card {
@@ -256,8 +234,10 @@ body {
     
 
     width: 40%;
+    width: 40vw;
     height: 80%;
-    margin: 0 0.5%;
+    margin: 2.5% 0.5%;
+    
 }
 
 .project-card {
@@ -268,8 +248,12 @@ body {
     transform: scale(1.01);
 }
 
+.project-card:hover {
+    cursor: e-resize;
+}
+
 .project-media {
-    outline: 5px solid var(--snow);
+    /* outline: 5px solid var(--snow); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,35 +356,38 @@ body {
 /* blog posts */
 
 .blog-section-container {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
     width: 100vw;
     /* height: 100vw; */
+
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1vw 0vw;
+    grid-gap: 1vw 1vw;
+    padding: 10px 5vw;
 
-    grid-template-columns: 48.5vw 48.5vw;
-    justify-content: space-evenly;
+    /* grid-template-columns: 42.5vw 42.5vw;
+    justify-content: space-evenly; 
+    grid-gap: 1vw 0; */
 }
 
 .blog-card {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 
     background-color: var(--gray);
-    width: 48vw;
     height: 48vw;
 
 
     justify-self: center; 
     align-self: center;
 
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     
+    height: 44vw;
     width: 100%;
-    height: 48.5vw;
 }
 
 
@@ -421,7 +408,7 @@ body {
     background-color: rgba(10, 9, 8, 0.8);
     backdrop-filter: saturate(200%) blur(20px);
     color: var(--snow);
-    width: 98vw;
+    width: 90vw;
     height: 8%;
     position: absolute;
     top: 8vh;
@@ -437,7 +424,7 @@ body {
 
 #whoami-section {
     height: 92vh;
-    width: 98vw;
+    width: 90vw;
 
     overflow-x: scroll;
     overflow-y: hidden; 
