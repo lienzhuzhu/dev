@@ -383,6 +383,7 @@ body {
     align-self: center;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
@@ -517,6 +518,9 @@ body {
 
     font-family: 'Courier New';
 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
     /* border: 10px solid yellow; */
 }
 
@@ -532,6 +536,8 @@ body {
     overflow-y: hidden; 
     white-space: nowrap;
     scroll-snap-type: x mandatory;
+
+    border-radius: 20px;
 }
 
 .test-card {
@@ -561,6 +567,24 @@ body {
 .blog-title-card {
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    border-radius: 20px;
+    color: var(--snow);
+}
+
+.blog-title-card strong {
+    font-size: 40px;
+}
+
+.youtube-card {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    border-radius: 20px;
+}
+
+.blog-post-card {
+    /* background-color: #FBAB7E; */
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,131,130,1) 0%, rgba(235,131,130,0.75) 38.6%, rgba(211,177,125,0.52) 72.1%, rgba(211,177,125,0.24) 94.7% );
     border-radius: 20px;
 }
 
