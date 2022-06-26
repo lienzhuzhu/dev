@@ -1,4 +1,3 @@
-
 :root {
     --yellow: #ffe74cff;
     --rose: #ff5964ff;
@@ -21,16 +20,15 @@ body {
 }
 
 
-
 /* Navigation Bar */
 
 .nav {
-    /* z-index: 100; */
+    z-index: 100;
     width: 100%;
     height: 6vh;
     background-color: rgba(10, 9, 8, 0.8);
     backdrop-filter: saturate(200%) blur(20px);
-    /* position: fixed; */
+    position: fixed;
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: center;
@@ -53,10 +51,6 @@ body {
     width: fit-content;
     padding-left: 5vw;
     height: 100%;
-
-    /* padding-left: 1vw; */
-
-    /* border: 1px solid red; */
 }
 
 .home-button:hover {
@@ -71,14 +65,11 @@ body {
     /* width of 15vw allows linkedin logo to line up with cards */
     width: 15vw; 
     height: 100%;
-
-    /* width: 19vw; */
 }
 
 .link-icon-wrapper {
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .social-icon {
@@ -89,13 +80,10 @@ body {
 
 
 
-/* About Me */
-
 .flex-container {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -103,9 +91,16 @@ body {
 }
 
 
-.about-me-section {
-    width: 100vw;
 
+
+
+
+/* About Me */
+
+
+
+
+.about-me-section {
     width: 100%;
     /* height: 100vh; */
 
@@ -317,12 +312,12 @@ body {
 
 
 
-/* from section */
+/* iowa section */
 
 
 .iowa-section-card {
     height: 100%;
-    width: 100%;
+    width: 50%;
     font-size: 2.5vw;
     color: var(--snow);
     text-align: center;
@@ -332,10 +327,7 @@ body {
     background-position-x: center;
     background-position-y: center;
 
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .subheading {
@@ -397,54 +389,76 @@ body {
     width: 100%;
 }
 
+.blog-title-card {
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    border-radius: 20px;
+    color: var(--silver);
+    font-size: 1rem;
+}
 
+.blog-title-card strong {
+    font-size: 3rem;
+    color: var(--snow);
+}
+
+.youtube-card {
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    border-radius: 20px;
+}
+
+.blog-post-card {
+    /* background-color: #FBAB7E; */
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,131,130,1) 0%, rgba(235,131,130,0.75) 38.6%, rgba(211,177,125,0.52) 72.1%, rgba(211,177,125,0.24) 94.7% );
+    border-radius: 20px;
+}
 
 /* $ whoami section */
 
-#whoami-section-container {
-    border:1px solid red;
-    height: 100vh;
-    width: 100vw;
+#whoami-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    position:relative;
+    justify-content: end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
 }
 
+.cmd {
+    background-color: rgba(10, 9, 8, 0.8);
+    backdrop-filter: saturate(200%) blur(20px);
+    color: var(--snow);
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    top: 0vh;
+    display: flex;
+    align-items: center;
 
+    font-family: 'Courier New';
 
-#whoami-section {
-    height: 92vh;
-    width: 90vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-    /* position:relative; */
+.cmd strong {
+    margin-left: 20px;
+}
+
+#whoami-carousel {
+    height: 100%;
+    width: 100%;
 
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
     scroll-snap-type: x mandatory;
 
-    /* border: 1px solid blue; */
-}
-
-.whoami-cmd {
-    background-color: rgba(10, 9, 8, 0.8);
-    backdrop-filter: saturate(200%) blur(20px);
-    color: var(--snow);
-    width: 90vw;
-    height: 8%;
-    position: absolute;
-    top: 4vh;
-    display: flex;
-    align-items: center;
-
-    font-family: 'Courier New';
-
-    /* border: 1px solid red; */
-}
-
-.whoami-cmd strong {
-    margin-left: 20px;
+    border-radius: 20px;
 }
 
 .whoami-card {
@@ -489,110 +503,6 @@ body {
 }
 
 
+@media (max-aspect-ratio: 1/1) {
 
-
-
-
-
-
-/* $ test section */
-
-#test-container {
-    /* border:5px solid black; */
-    /* height: 100vh;
-    width: 100vw; */
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
 }
-
-.test-cmd {
-    background-color: rgba(10, 9, 8, 0.8);
-    backdrop-filter: saturate(200%) blur(20px);
-    color: var(--snow);
-    width: 100%;
-    height: 8%;
-    position: absolute;
-    top: 0vh;
-    display: flex;
-    align-items: center;
-
-    font-family: 'Courier New';
-
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-    /* border: 10px solid yellow; */
-}
-
-.test-cmd strong {
-    margin-left: 20px;
-}
-
-#test-section {
-    height: 100%;
-    width: 100%;
-
-    overflow-x: scroll;
-    overflow-y: hidden; 
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-
-    border-radius: 20px;
-}
-
-.test-card {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    /* text-align: center; */
-
-    scroll-snap-align: center;
-}
-
-.test-card div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.test-card div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.blog-title-card {
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    border-radius: 20px;
-    color: var(--silver);
-    font-size: 1rem;
-}
-
-.blog-title-card strong {
-    font-size: 3rem;
-    color: var(--snow);
-}
-
-.youtube-card {
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-    border-radius: 20px;
-}
-
-.blog-post-card {
-    /* background-color: #FBAB7E; */
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,131,130,1) 0%, rgba(235,131,130,0.75) 38.6%, rgba(211,177,125,0.52) 72.1%, rgba(211,177,125,0.24) 94.7% );
-    border-radius: 20px;
-}
-
