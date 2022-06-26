@@ -453,6 +453,10 @@ body {
 
 @media (max-aspect-ratio: 1/1) {
 
+    .nav {
+        background-color: rgba(10, 9, 8, 0.925);
+    }
+
     /* bio section */
     .bio-section {
         height: auto;
