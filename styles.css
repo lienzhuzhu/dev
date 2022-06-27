@@ -366,6 +366,18 @@ body {
     cursor: pointer;
 }
 
+a.youtube-link,
+a.blog-link {
+    color: var(--snow);
+    text-decoration: none;
+    cursor: auto;
+}
+
+.youtube-card,
+.blog-post-card {
+    font-size: 1.5rem;
+}
+
 /* $ whoami section */
 
 #whoami-container {
@@ -551,4 +563,14 @@ body {
 
 }
 
+.ta-title {
+    border:1px solid red;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.whoami-card {
+    /* outline: 10px solid red; */
+}
 
