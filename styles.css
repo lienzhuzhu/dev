@@ -411,7 +411,6 @@ a.blog-link {
 #whoami-carousel {
     height: 100%;
     width: 100%;
-
     overflow-x: scroll;
     overflow-y: hidden; 
     white-space: nowrap;
@@ -421,8 +420,8 @@ a.blog-link {
 }
 
 .whoami-card {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     display: inline-block;
 
     scroll-snap-align: center;
