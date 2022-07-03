@@ -378,16 +378,7 @@ a.blog-link {
     font-size: 1.5rem;
 }
 
-/* $ whoami section */
-
-#whoami-container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+/* $ info section */
 
 .cmd {
     background-color: rgba(10, 9, 8, 0.8);
@@ -408,7 +399,7 @@ a.blog-link {
     margin-left: 5%;
 }
 
-#whoami-carousel {
+#info-card-container {
     height: 100%;
     width: 100%;
     overflow-x: scroll;
@@ -419,7 +410,7 @@ a.blog-link {
     border-radius: var(--rad);
 }
 
-.whoami-card {
+.info-card {
     /* width: 100%; */
     /* height: 100%; */
     display: inline-block;
@@ -427,23 +418,6 @@ a.blog-link {
     scroll-snap-align: center;
 }
 
-.whoami-card div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.whoami-card div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.whoami-card div .contain-this {
-    object-fit: contain;
-}
 
 
 /* footer */
