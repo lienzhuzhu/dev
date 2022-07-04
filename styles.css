@@ -30,6 +30,18 @@ body {
     justify-content: center;
 }
 
+.silver-text {
+    color: var(--silver);
+}
+
+.inline-text {
+    display: inline;
+}
+
+.section-header {
+    padding-left: 5vw;
+}
+
 
 /* Navigation Bar */
 
@@ -140,10 +152,6 @@ body {
     left: -0.25rem; 
 }
 
-.silver-text {
-    color: var(--silver);
-}
-
 .student-wrapper {
     font-size: 2.5rem;
     
@@ -163,15 +171,6 @@ body {
 .projects-section {
     width: 100%;
     margin-top: 10vh;
-}
-
-.projects-section-header {
-    padding-left: 5vw;
-    font-size: 2rem;
-}
-
-.silver-header {
-    color: var(--silver);
 }
 
 #project-card-container {
@@ -298,13 +297,7 @@ body {
 /* blog posts */
 
 .blog-section {
-    width: 100vw;
-    width: 100%;
-
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1vw 1vw;
+    width: fit-content;
     padding: 0 5vw;
 }
 
@@ -378,16 +371,7 @@ a.blog-link {
     font-size: 1.5rem;
 }
 
-/* $ whoami section */
-
-#whoami-container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+/* $ info section */
 
 .cmd {
     background-color: rgba(10, 9, 8, 0.8);
@@ -408,7 +392,7 @@ a.blog-link {
     margin-left: 5%;
 }
 
-#whoami-carousel {
+#info-card-container {
     height: 100%;
     width: 100%;
     overflow-x: scroll;
@@ -419,7 +403,7 @@ a.blog-link {
     border-radius: var(--rad);
 }
 
-.whoami-card {
+.info-card {
     /* width: 100%; */
     /* height: 100%; */
     display: inline-block;
@@ -427,23 +411,28 @@ a.blog-link {
     scroll-snap-align: center;
 }
 
-.whoami-card div {
-    width: 100%;
-    height: 100%;
+.two-rows {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.whoami-card div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.lone-img {
+    width: 45vw;
 }
 
-.whoami-card div .contain-this {
-    object-fit: contain;
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+
+.medium-text {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 
 
 /* footer */
@@ -507,9 +496,9 @@ a.blog-link {
     .projects-section-header strong {
         font-size: 6vw;
     }
-    .silver-header {
+    .silver-text {
         display: block;
-        font-size: 3vw;
+        font-size: 100%;
     }
     #project-card-container {
         padding: 10% 4.5%;
@@ -524,7 +513,7 @@ a.blog-link {
 
     /* iowa section */
     .iowa-section {
-        margin-top: 50px;
+        /* margin-top: 50px; */
         height: 50vh;
     }
     .iowa-card {
@@ -539,9 +528,7 @@ a.blog-link {
 
     /* blog section */
     .blog-section {
-        margin-top: 50px;
-        grid-template-columns: 1fr;
-        grid-gap: 3vw 0;
+        width: fit-content;
     }
     .blog-title-card {
         height: 22vw;
@@ -561,12 +548,4 @@ a.blog-link {
     }
 
 }
-
-.ta-title {
-    border:1px solid red;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-}
-
 
