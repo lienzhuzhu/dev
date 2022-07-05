@@ -19,6 +19,10 @@ body {
     cursor: default;
 }
 
+.mix-blend-darken {
+    mix-blend-mode: darken;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -297,8 +301,8 @@ body {
 /* blog posts */
 
 .blog-section {
-    width: fit-content;
-    padding: 0 5vw;
+    box-sizing: border-box;
+    width: 100vw;
 }
 
 .something-to-hover {
@@ -411,14 +415,15 @@ a.blog-link {
     scroll-snap-align: center;
 }
 
-.two-rows {
+.resume-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5vh 0;
 }
 
 .lone-img {
-    width: 45vw;
+    width: 30vw;
 }
 
 .info-text {
@@ -527,24 +532,17 @@ a.blog-link {
     }
 
     /* blog section */
-    .blog-section {
-        width: fit-content;
+    .long-img {
+        width: 30vh;
     }
-    .blog-title-card {
-        height: 22vw;
+    .second-header {
+        padding-left: 5vw;
     }
-    .blog-header {
-        font-size: 4vh;
+    .medium-text {
+        font-size: 1rem;
     }
-    .whoami-cards-container {
-        margin-top: 50px;
-    }
-    .whoami-cards-container {
-        height: 88vw;
-    }
-    .cmd {
-        font-size: 2vw;
-        height: 4vh;
+    .small-text {
+        font-size: 0.5rem;
     }
 
 }
