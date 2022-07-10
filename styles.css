@@ -303,6 +303,7 @@ body {
 .blog-section {
     box-sizing: border-box;
     width: 100vw;
+    margin-top: 10vh;
 }
 
 .something-to-hover {
