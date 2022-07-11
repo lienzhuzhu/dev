@@ -109,12 +109,12 @@ body {
 /* Biography */
 
 .bio-section {
-    padding-top: calc(var(--navheight) + 2vh);
+    padding-top: 16vh;
+    padding-bottom: 10vh;
 }
 
 .bio-card {
     width: 90vw;
-    height: 45vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,20 +124,16 @@ body {
 }
 
 .headshot-card {
-    width: 50%;
-    height: 100%;
+    width: 30%;
 }
 
 .headshot {
     height: 100%;
     width: 100%;
-    vertical-align: top;
     object-fit: cover;
 }
 
 .bio-text-card {
-    width: 50%;
-    height: 100%;
     color: var(--black);
 
     display: flex;
@@ -166,7 +162,6 @@ body {
 .school-wrapper {
     position: relative;
     left: -0.0625rem;
-    top: 0.5rem;
 }
 
 
@@ -270,6 +265,7 @@ body {
 
 .iowa-section {
     height: 100vh;
+    margin-bottom: -10vh;
 }
 
 .iowa-card {
