@@ -265,7 +265,7 @@ body {
 
 .iowa-section {
     height: 100vh;
-    margin-bottom: -10vh;
+    /* margin-bottom: -10vh; */
 }
 
 .iowa-card {
@@ -427,7 +427,9 @@ a.blog-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    padding: 0 10vw;
+    text-align: center;
 }
 
 .medium-text {
@@ -436,21 +438,43 @@ a.blog-link {
 }
 
 
+.section-header {
+    margin: 2rem 0;
+}
+
+.quote-wrapper {
+    padding: 0 7.5vw;
+    margin: 2.5vh 0;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+}
+
+.quote-source {
+    margin-top: 2.5vh;
+    padding: 0 2.5vw;
+}
+
 
 /* footer */
 
 .footer {
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     color: var(--silver);
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: -10vh;
 }
 
 .footer-text-wrapper {
     font-size: 0.8rem;
 }
+
+
 
 
 @media (max-aspect-ratio: 1/1) {
@@ -532,14 +556,11 @@ a.blog-link {
     .long-img {
         width: 30vh;
     }
-    .second-header {
-        padding-left: 5vw;
-    }
     .medium-text {
         font-size: 1rem;
     }
     .small-text {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 
 }
