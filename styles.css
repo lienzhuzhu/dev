@@ -573,7 +573,7 @@ a.blog-link {
 }
 
 .modal {
-    width: 25vw;
+    width: 80vw;
     height: 15vh;
     font-weight: 700;
     box-sizing: border-box;
@@ -589,7 +589,7 @@ a.blog-link {
     color: var(--rose);
     position: fixed;
     top: 10vh;
-    left: 37.5vw;
+    left: 10vw;
     z-index: 1000;
 }
 
