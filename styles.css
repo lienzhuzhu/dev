@@ -597,6 +597,10 @@ a.blog-link {
 
     .modal {
         min-height: 10vh;
+        padding: 0.25vh 0;
+    }
+    .modal-text {
+        font-size: 0.75rem;
     }
 }
 
