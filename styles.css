@@ -54,14 +54,13 @@ body {
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2.5vw;
-    text-align: center;
+    justify-content: space-evenly;
     background-color: var(--black);
     color: var(--snow);
     position: fixed;
     top: 6vh;
     z-index: 1000;
+    text-align: center;
 }
 
 
@@ -598,6 +597,7 @@ a.blog-link {
     .modal {
         min-height: 10vh;
         padding: 0.25vh 0vw;
+        gap: 2vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
