@@ -597,10 +597,13 @@ a.blog-link {
 
     .modal {
         min-height: 10vh;
-        padding: 0.25vh 0;
+        padding: 0.25vh 0vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .modal-text {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 }
 
@@ -611,5 +614,6 @@ a.blog-link {
 /* 
 * {
     outline: 2px solid #f00 !important;
-  } */
+} 
+*/
 
