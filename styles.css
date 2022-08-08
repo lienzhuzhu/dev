@@ -326,7 +326,7 @@ body {
 /* blog posts */
 
 .blog-section {
-    width: 100vw;
+    width: 100%;
     margin-top: 10vh;
 }
 
@@ -608,6 +608,8 @@ a.blog-link {
 
 
 
-
-
+/* 
+* {
+    outline: 2px solid #f00 !important;
+  } */
 
