@@ -52,11 +52,10 @@ body {
     width: 100vw;
     height: 8vh;
     font-weight: 700;
-    padding: 0 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5%;
+    gap: 2.5vw;
     text-align: center;
     background-color: var(--black);
     color: var(--snow);
@@ -65,10 +64,8 @@ body {
     z-index: 1000;
 }
 
-.close-button {
-    cursor: pointer;
-}
-.close-button:hover,
+
+.close-button,
 .modal:hover {
     cursor: pointer;
 }
@@ -596,6 +593,10 @@ a.blog-link {
     }
     .small-text {
         font-size: 0.75rem;
+    }
+
+    .modal {
+        min-height: 10vh;
     }
 }
 
