@@ -11,37 +11,11 @@
     --navheight: 6vh;
 }
 
-.modal {
-    width: 80vw;
-    height: 15vh;
-    font-weight: 700;
-    box-sizing: border-box;
-    padding: 0 1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
-    border: 3px solid black;
-    background-color: var(--snow);
-    color: var(--rose);
-    position: fixed;
-    top: 10vh;
-    left: 10vw;
-    z-index: 1000;
-}
 
-.close-button {
-    font-size: 2rem;
-}
-.close-button:hover,
-.modal:hover {
-    cursor: pointer;
-}
 
 body {
     margin: 0;
+    padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--snow);
     cursor: default;
@@ -74,6 +48,31 @@ body {
     padding-left: 5vw;
 }
 
+.modal {
+    width: 100vw;
+    height: 8vh;
+    font-weight: 700;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5%;
+    text-align: center;
+    background-color: var(--black);
+    color: var(--snow);
+    position: fixed;
+    top: 6vh;
+    z-index: 1000;
+}
+
+.close-button {
+    cursor: pointer;
+}
+.close-button:hover,
+.modal:hover {
+    cursor: pointer;
+}
+
 
 /* Navigation Bar */
 
@@ -84,6 +83,7 @@ body {
     background-color: rgba(10, 9, 8, 0.8);
     backdrop-filter: saturate(200%) blur(20px);
     position: fixed;
+    top: 0;
     display: grid;
     grid-template-columns: 80% 20%;
     align-items: center;
@@ -329,7 +329,6 @@ body {
 /* blog posts */
 
 .blog-section {
-    box-sizing: border-box;
     width: 100vw;
     margin-top: 10vh;
 }
@@ -598,12 +597,12 @@ a.blog-link {
     .small-text {
         font-size: 0.75rem;
     }
-
-    .modal {
-        height: 20vh;
-    }
-
 }
+
+
+
+
+
 
 
 
