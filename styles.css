@@ -102,10 +102,15 @@ body {
     width: fit-content;
     padding-left: 5vw;
     height: 100%;
+    text-decoration: none;
 }
 
 .home-button:hover {
     cursor: pointer;
+    text-decoration: none;
+}
+.home-button:visited {
+    text-decoration: none;
 }
 
 .right-align-container {
