@@ -316,6 +316,7 @@ body {
     color: var(--snow);
     text-align: center;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .subheading {
@@ -509,8 +510,23 @@ a.blog-link {
     font-size: 0.8rem;
 }
 
+.smaller-text {
+    font-size: 1.25rem;
+    margin-bottom: 2.5%;
+}
 
-
+.website-link {
+    color: var(--snow);
+    font-size: 1.5rem;
+}
+.website-link a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.website-link a:hover {
+    cursor: pointer;
+    color: var(--silver);
+}
 
 @media (max-aspect-ratio: 1/1) {
 
@@ -582,9 +598,6 @@ a.blog-link {
     }
     .www {
         font-size: 2.5vh;
-    }
-    .subheading {
-        font-size: 2vh;
     }
 
     /* blog section */
