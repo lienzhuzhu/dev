@@ -520,7 +520,7 @@ a.blog-link {
     font-size: 1.5rem;
 }
 .website-link a {
-    color: inherit;
+    color: var(--rose);
     text-decoration: inherit;
 }
 .website-link a:hover {
