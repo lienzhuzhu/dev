@@ -510,11 +510,6 @@ a.blog-link {
     font-size: 0.8rem;
 }
 
-.smaller-text {
-    font-size: 1.25rem;
-    margin-bottom: 2.5%;
-}
-
 .website-link {
     color: var(--snow);
     font-size: 1.5rem;
@@ -526,6 +521,11 @@ a.blog-link {
 .website-link a:hover {
     cursor: pointer;
     color: var(--silver);
+}
+
+.smaller-text {
+    font-size: 1.25rem;
+    margin-bottom: 2.5%;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -622,7 +622,17 @@ a.blog-link {
     .modal-text {
         font-size: 0.65rem;
     }
+
+    .smaller-text {
+        font-size: 0.9rem;
+    }
+
+    .website-link {
+        font-size: 1rem;
+    }
 }
+
+
 
 
 
