@@ -17,3 +17,5 @@ document.getElementById("modal").addEventListener("click", closeModal);
 function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
+
+document.getElementById("year-span").innerHTML = new Date().getFullYear();
