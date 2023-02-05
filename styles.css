@@ -502,8 +502,6 @@ a.blog-link {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    margin-top: -10vh;
 }
 
 .footer-text-wrapper {
