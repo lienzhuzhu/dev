@@ -12,7 +12,6 @@
 }
 
 
-
 body {
     margin: 0;
     padding: 0;
@@ -46,27 +45,6 @@ body {
 
 .section-header {
     padding-left: 5vw;
-}
-
-.modal {
-    width: 100vw;
-    height: 8vh;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--black);
-    color: var(--snow);
-    position: fixed;
-    top: 6vh;
-    z-index: 1000;
-    text-align: center;
-}
-
-
-.close-button,
-.modal:hover {
-    cursor: pointer;
 }
 
 
@@ -293,11 +271,8 @@ body {
 }
 
 
-/* iowa section */
-
 .iowa-section {
     height: 100vh;
-    /* margin-bottom: -10vh; */
 }
 
 .iowa-card {
@@ -629,16 +604,3 @@ a.blog-link {
         font-size: 1rem;
     }
 }
-
-
-
-
-
-
-
-/* 
-* {
-    outline: 2px solid #f00 !important;
-} 
-*/
-
