@@ -20,16 +20,16 @@ body {
     cursor: default;
 }
 
-.mix-blend-darken {
-    mix-blend-mode: darken;
-}
-
 .bold {
     font-weight: 700;
 }
 
+.full-size {
+    height: 100vh;
+    width: 100vw;
+}
+
 .flex-container {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,9 +43,6 @@ body {
     display: inline;
 }
 
-.section-header {
-    padding-left: 5vw;
-}
 
 
 /* Navigation Bar */
@@ -83,11 +80,9 @@ body {
     text-decoration: none;
 }
 
-.home-button:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
+.home-button:hover,
 .home-button:visited {
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -114,11 +109,6 @@ body {
 
 
 /* Biography */
-
-.bio-section {
-    padding-top: 16vh;
-    padding-bottom: 10vh;
-}
 
 .bio-card {
     width: 90vw;
@@ -172,12 +162,7 @@ body {
 }
 
 
-/* Project Cards */
-
-.projects-section {
-    width: 100%;
-    margin-top: 10vh;
-}
+/* Project Display*/
 
 #project-card-container {
     width: auto;
@@ -271,235 +256,17 @@ body {
 }
 
 
-.iowa-section {
-    height: 100vh;
-}
-
-.iowa-card {
-    background-image: url(./img/iowa.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center;
-    background-position-y: center;
-
-    flex-direction: column;
-    height: 100%;
-}
-
-.www {
-    font-size: 2.5vw;
-    color: var(--snow);
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.subheading {
-    color: var(--silver);
-    color: #86868B;
-    font-size: 2vw;
-    text-align: center;
-}
-
-
-/* blog posts */
-
-.blog-section {
-    width: 100%;
-    margin-top: 10vh;
-}
-
-.something-to-hover {
-    transition: transform 0.2s ease-in-out;
-}
-
-.something-to-hover:hover {
-    transform: scale(1.01);
-}
-
-.blog-card {
-    justify-self: center; 
-    align-self: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    height: 44vw;
-    width: 100%; 
-}
-
-.blog-title-card {
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-    border-radius: var(--rad);
-
-    /* desktop */
-    font-size: 5vw;
-}
-
-.blog-header {
-    color: var(--snow);
-}
-
-.youtube-card {
-    background-color: #FF9A8B;
-    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-    border-radius: var(--rad);
-}
-
-.blog-post-card {
-    /* background-color: #FBAB7E; */
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,131,130,1) 0%, rgba(235,131,130,0.75) 38.6%, rgba(211,177,125,0.52) 72.1%, rgba(211,177,125,0.24) 94.7% );
-    border-radius: var(--rad);
-}
-
-.youtube-card,
-.blog-post-card {
-    transition: transform 0.2s ease-in-out;
-}
-
-.youtube-card:hover,
-.blog-post-card:hover {
-    transform: scale(1.01);
-    cursor: pointer;
-}
-
-a.youtube-link,
-a.blog-link {
-    color: var(--snow);
-    text-decoration: none;
-    cursor: auto;
-}
-
-.youtube-card,
-.blog-post-card {
-    font-size: 1.5rem;
-}
-
-/* $ info section */
-
-.cmd {
-    background-color: rgba(10, 9, 8, 0.8);
-    backdrop-filter: saturate(200%) blur(20px);
-    color: var(--snow);
-    width: 100%;
-    height: 6vh;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    font-family: 'Courier New';
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 2vh;
-}
-
-.cmd div {
-    margin-left: 5%;
-}
-
-#info-card-container {
-    height: 100%;
-    width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden; 
-    white-space: nowrap;
-    scroll-snap-type: x mandatory;
-
-    border-radius: var(--rad);
-}
-
-.info-card {
-    /* width: 100%; */
-    /* height: 100%; */
-    display: inline-block;
-
-    scroll-snap-align: center;
-}
-
-.resume-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5vh 0;
-}
-
-.lone-img {
-    width: 30vw;
-}
-
-.info-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    padding: 0 10vw;
-    text-align: center;
-}
-
-.medium-text {
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-
-.section-header {
-    margin: 2rem 0;
-}
-
-.quotes-section {
-    margin-top: 10vh;
-}
-
-.quote-wrapper {
-    padding: 0 5vw;
-    margin: 5vh 0;
-}
-
-.quote-text {
-    font-size: 1.5rem;
-}
-
-.quote-source {
-    margin-top: 2.5vh;
-    padding: 0 2.5vw;
-}
-
-
 /* footer */
 
 .footer {
     width: 100%;
-    height: 10vh;
-    color: var(--silver);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: var(--navheight);
 }
 
 .footer-text-wrapper {
     font-size: 0.8rem;
 }
 
-.website-link {
-    color: var(--snow);
-    font-size: 1.5rem;
-}
-.website-link a {
-    color: var(--rose);
-    text-decoration: inherit;
-}
-.website-link a:hover {
-    cursor: pointer;
-    color: var(--silver);
-}
-
-.smaller-text {
-    font-size: 1.25rem;
-    margin-bottom: 2.5%;
-}
 
 @media (max-aspect-ratio: 1/1) {
 
@@ -507,11 +274,6 @@ a.blog-link {
         background-color: rgba(10, 9, 8, 0.925);
     }
 
-    /* bio section */
-    .bio-section {
-        height: auto;
-        padding-top: calc(2 * var(--navheight));
-    }
     .bio-card {
         flex-direction: column;
         height: auto;
@@ -527,7 +289,6 @@ a.blog-link {
         align-items: center;
         justify-content: start;
         width: 90vw;
-        /* height: 36vh; */
     }
     .name-wrapper {
         font-size: 3.5rem;
@@ -546,10 +307,6 @@ a.blog-link {
     .projects-section-header strong {
         font-size: 6vw;
     }
-    .silver-text {
-        display: block;
-        font-size: 100%;
-    }
     #project-card-container {
         padding: 10% 4.5%;
     }
@@ -559,48 +316,5 @@ a.blog-link {
     }
     .repo-link {
         width: 2vh;
-    }
-
-    /* iowa section */
-    .iowa-section {
-        /* margin-top: 50px; */
-        height: 50vh;
-    }
-    .iowa-card {
-        width: 90vw;
-    }
-    .www {
-        font-size: 2.5vh;
-    }
-
-    /* blog section */
-    .long-img {
-        width: 30vh;
-    }
-    .medium-text {
-        font-size: 1rem;
-    }
-    .small-text {
-        font-size: 0.75rem;
-    }
-
-    .modal {
-        min-height: 10vh;
-        padding: 0.25vh 0vw;
-        gap: 2vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .modal-text {
-        font-size: 0.65rem;
-    }
-
-    .smaller-text {
-        font-size: 0.9rem;
-    }
-
-    .website-link {
-        font-size: 1rem;
     }
 }
