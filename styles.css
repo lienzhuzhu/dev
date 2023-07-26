@@ -9,6 +9,7 @@
 
     --rad: 1%;
     --navheight: 6vh;
+    --margin-val: 5vw;
 }
 
 
@@ -75,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     width: fit-content;
-    padding-left: 5vw;
+    padding-left: var(--margin-val);
     height: 100%;
     text-decoration: none;
 }
@@ -89,7 +90,7 @@ body {
 .right-nav-align-container {
     display: flex;
     justify-content: end;
-    gap: 5vw;
+    gap: var(--margin-val);
 
     /* width of 15vw allows linkedin logo to line up with cards */
     width: 15vw; 
@@ -118,6 +119,8 @@ body {
 
     /* desktop */
     flex-direction: row;
+
+    border: 1px solid red;
 }
 
 .headshot-card {
@@ -181,9 +184,6 @@ body {
         background-color: rgba(10, 9, 8, 0.925);
     }
 
-    .bio-section {
-        height: auto;
-    }
     .bio-card {
         flex-direction: column;
         height: auto;
