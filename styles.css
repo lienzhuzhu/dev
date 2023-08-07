@@ -32,7 +32,7 @@ body {
 
 .padded-section {
     padding: 0 var(--margin-val);
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .flex-container {
