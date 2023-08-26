@@ -32,7 +32,6 @@ body {
 
 .padded-section {
     padding: 0 var(--margin-val);
-    /*border: 1px solid red;*/
 }
 
 .flex-container {
@@ -187,19 +186,21 @@ body {
     margin-bottom: -25vh; /* to pull up the footer */
 }
 .project-card {
-    border: 1px solid black;
     height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    padding: 0 25vw;
-    border-radius: 5px;
+    padding: 0 20vw;
 }
 
 .floating-card {
     /* this will hold the rules to make a floating style card */
+}
+
+.center-text {
+    text-align: center;
 }
 
 .project-title {
@@ -216,6 +217,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5vw;
+    margin-bottom: 3.2vh;
+}
+.project-link-container > *:only-child {
+    grid-column: 1 / -1; /* Span the full width */
+    justify-self: center; /* Center the item */
 }
 
 .project-link {
@@ -229,6 +235,16 @@ body {
 }
 .project-link:hover {
     text-decoration: underline;
+}
+
+.project-preview-container {
+    width: 50%;
+}
+
+.project-preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -291,8 +307,8 @@ body {
         height: fit-content;
         padding: 10vh 5vw;
     }
-    .project-preview {
-        display: none;
+    .project-preview-container {
+        width: 80%;
     }
 
 }
