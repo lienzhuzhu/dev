@@ -31,7 +31,7 @@ body {
 }
 
 .padded-section {
-    padding: 0 var(--margin-val);
+    /* padding: 0 var(--margin-val); */
 }
 
 .flex-container {
@@ -179,12 +179,14 @@ body {
 
 /* Project Section */
 
-#project-card-container {
+.project-card-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10vh;
-    margin-bottom: -25vh; /* to pull up the footer */
+    height: 100vh;
+    /* margin-bottom: -25vh; /* to pull up the footer */ */
 }
+
 .project-card {
     min-height: 75vh;
     display: flex;
@@ -193,10 +195,6 @@ body {
     justify-content: center;
 
     padding: 0 20vw;
-}
-
-.floating-card {
-    /* this will hold the rules to make a floating style card */
 }
 
 .center-text {
@@ -255,7 +253,7 @@ body {
 .footer {
     width: 100%;
     height: var(--navheight);
-    margin-top: 36vh;
+    margin-top: 0;
 }
 
 .footer-text-wrapper {
@@ -274,7 +272,8 @@ body {
         height: auto;
     }
     #headshot-card {
-        display: none;
+        height: 100%;
+        width: 90%;
     }
     .bio-text-card {
         padding-left: 0;
@@ -283,6 +282,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 90vw;
+        height: 100vh;
     }
     .name-wrapper {
         font-size: 3.5rem;
@@ -293,23 +293,25 @@ body {
     #degree-title {
         display: none;
     }
-    #industry-title {
-        display: block;
-    }
     .school-wrapper {
         display: none;
         /* font-size: 3vw; */
     }
 
-    #project-card-container {
+    .project-card-container {
         gap: 2vh;
     }
+
     .project-card {
         height: fit-content;
-        padding: 10vh 5vw;
+        padding: 5vh 5vw;
     }
     .project-preview-container {
         width: 80%;
+    }
+
+    .footer {
+        display: none;
     }
 
 }
